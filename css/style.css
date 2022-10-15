@@ -1291,7 +1291,7 @@ f
 /*   padding-bottom: 10px;*/
    margin-top: 0px;
   padding: 1px 10px 1px 4%;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
 }
 
 .breadcrumbs {
@@ -1875,10 +1875,10 @@ f
 }
 
 .icon_contacts {
-   width: 17px;
-   height: 17px;
+   width: 20px;
+   height: 20px;
    color: orangered;
-   margin-right: 3px;
+/*   margin-right: 3px;*/
    margin-right: 5px;
 }
 
