@@ -1414,7 +1414,7 @@ f
 
 .fag_title {
    font-weight: 700;
-   font-size: 20px;
+   font-size: 21px;
    margin-bottom: 10px;
    border-left: 5px solid #0080ff;
    padding: 5px 10px;
@@ -1428,7 +1428,7 @@ f
    margin-bottom: 10px;
 }
 .about_text {
-   font-size: 15px;
+   font-size: 16px;
    line-height: 24px;
    margin-bottom: 20px;
    border-bottom: 1px dotted grey;
@@ -1450,7 +1450,7 @@ f
 }
 .info_title {
    font-weight: 700;
-   font-size: 18px;
+   font-size: 19px;
    margin-bottom: 10px;
    border-left: 4px solid gold;
    padding: 3px 10px;
@@ -1476,9 +1476,16 @@ f
 }
 
 .about_same {
-   margin-bottom: 30px;
+   margin-bottom: 10px;
   border-top: 1px dotted grey;
+/*  border: 1px dotted grey;*/
    padding-top: 15px;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: space-between;
+   width: 100%;
 }
 .about_same-image {
    margin: 5px 0px 15px;
@@ -1498,20 +1505,38 @@ f
     width: 100%;
     height: 100%;
     object-fit: cover;
+   transition: all 0.4s ease 0s;
+}
+
+.about_same:hover .about_same-image img {
+   transform: scale(1.1);
+/*   transform: scale(0.7);*/
 }
 
 .about_same-info {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: stretch;
+   width: 100%;
 }
 .about_same-title {
-   font-size: 16px;
+   font-size: 17px;
    font-weight: 700;
    margin-bottom: 10px;
+   display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+      overflow: hidden;
+   color: black;
 }
 .about_same-price {
    font-size: 16px;
    font-weight: 500;
    text-align: right;
-   margin-bottom: 20px;
+   margin-bottom: 15px;
+   color: black;
 }
 
 @media (max-width: 991px) {
@@ -1540,11 +1565,15 @@ f
    .about_same-body {
       display: flex;
       column-gap: 20px;
+      align-items: stretch;
+      height: 100%;
+      width: 100%;
    } 
 
    .about_same {
       flex: 0 1 50%;
       margin-bottom: 0px;
+      
    }
    
 }
@@ -1656,6 +1685,7 @@ f
    border: 1px dashed #c4c4c4;
    border-top: none;
    border-radius: 10px;
+   font-size: 16px;
 }
 
 .accordion[open] .accordion__icon {
@@ -1718,6 +1748,67 @@ f
 }
 
 
+
+/* 404 page styles */
+
+.section__404 {
+/*   background-color: #9aba95;*/
+   color: white;
+   padding: 80px 20px;
+   background-color: #0071bc;
+   margin-bottom: 40px;
+   
+}
+
+.p404_container {
+   margin: 0 auto;
+   text-align: center;
+}
+._container {
+}
+.p404__body {
+}
+.p404__title {
+   font-size: 90px;
+   font-weight: 700;
+   line-height: 90px;
+   color: gold;
+}
+.p404__subtitle {
+   font-size: 44px;
+   font-weight: 700;
+   margin-bottom: 30px;
+   color: #ffe34c;
+}
+.p404__text {
+   font-size: 26px;
+   font-weight: 700;
+   margin-bottom: 5px;
+}
+.p404__subtext {
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+.p404__btn {
+   background-color: white;
+   display: inline-flex;
+   color: #0071bc;
+   padding: 15px 25px;
+   font-size: 18px;
+   font-weight: 700;
+   border-radius: 15px;
+   border: 1px solid white;
+   cursor: pointer;
+   box-shadow: 0 0 7px 3px rgba(129, 129, 129, 0.66);
+   transition: all 0.3s ease 0s;
+}
+
+.p404__btn:hover {
+   background-color: #9aba95;
+   background-color: gold;
+   color: white;
+/*   color: gold;*/
+}
 
 
 /*  Footer Styles */
