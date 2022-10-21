@@ -2059,6 +2059,14 @@ f
 .map_mail__column {
    flex: 0 0 100%;
 }
+   .map_mail_main {
+      padding: 10px;
+   }
+   
+   .mail_main {
+      padding: 10px;
+   }
+   
 }
 
 /* Apply section styles */
