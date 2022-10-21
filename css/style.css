@@ -1456,6 +1456,10 @@ f
    border-left: 4px solid #00d400;
 }
 
+.title_blue {
+   border-left: 4px solid #0089ff;
+}
+
 
 .info_item {
    display: flex;
@@ -1903,6 +1907,160 @@ f
 }
 }
 
+/* Contacts map mail styles */
+
+.map_mail {
+   margin-bottom: 30px;
+}
+.map_mail_container {
+}
+
+.map_mail__row {
+   display: flex;
+}
+.map_mail__column {
+   flex: 0 0 50%;
+   padding: 10px;
+}
+.map_mail_body {
+}
+.map_mail_title {
+   background-color: #e8e8e8;
+   padding: 20px 20px 20px 40px;
+   font-size: 16px;
+   font-weight: 500;
+   position: relative;
+}
+
+.map_mail_title::before {
+   content: "";
+   position: absolute;
+   width: 6px;
+   height: 35px;
+   background-color: gold;
+   display: inline-block;
+   margin: 0px 10px 0px;
+   top: 12px;
+   left: 9px;
+}
+
+
+.map_mail_main {
+   padding: 20px;
+   background-color: #fcfcfc;
+   border: 1px solid #dedede;
+   border-top: none;
+}
+.map_mail_map {
+  height: 350px;
+}
+
+.mail_main {
+   padding: 20px;
+   background-color: #fcfcfc;
+   border: 1px solid #dedede;
+   border-top: none;
+   height: 390px;
+/*   height: 100%;*/
+}
+
+.contact_us_input_part {
+    width: 100%;
+/*    padding: 0 40px;*/
+    margin: 10px auto;
+}
+
+.contact_us_input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.name_mail_flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_name_mail {
+/*    max-width: 48%;*/
+    width: 48%;
+    margin: 5px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.input_subject {
+    width: 100%;
+    margin: 5px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.input_textarea {
+    width: 100%;
+    margin: 5px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+    overflow: auto;
+    resize: none;
+    font-family: inherit;
+}
+
+.btn_input {
+
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 10px 35px;
+
+    border-radius: 5px;
+    border: 1px solid gold;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: right;
+/*    text-align: left;*/
+    color: #009500;
+   color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .2s, color .2s linear;
+}
+
+.btn__red_c {
+    background-color: orange;
+    margin-bottom: 5px;
+}
+
+.btn__red_c:hover,
+.btn__red_c:focus {
+    background-color: orangered;
+    color: yellow;
+}
+
+.btn__red_c:active {
+    outline: none;
+    border: 1px solid white;
+
+}
+
+@media (max-width: 700px) {
+   .map_mail__row {
+   flex-wrap: wrap;
+}
+.map_mail__column {
+   flex: 0 0 100%;
+}
+}
+
 /* Apply section styles */
 
 .apply {
@@ -2083,6 +2241,7 @@ f
 /*   margin-top: auto;*/
 /*   border: 1px solid grey;*/
    font-size: 15px;
+   margin-bottom: 10px;
 }
 
 .icon_news {
@@ -2270,8 +2429,35 @@ f
 
 }
 
+/* News single page styles */
 
+.news_flash-single {
+   position: absolute;
+   background-color: red;
+   color: white;
+   padding: 5px 10px;
+   right: 0px;
+   top: 0px;
+   border-radius: 5px;
+   font-weight: 500;
+}
 
+.news_sections-link {
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px dotted grey;
+   padding: 15px 5px;
+   color: #0052c1;
+   transition: all 0.3s ease 0s;
+}
+
+.news_sections-name {
+   font-weight: 600;
+}
+
+.news_sections-link:hover {
+   color: orangered; 
+}
 
 /*  Footer Styles */
 
