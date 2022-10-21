@@ -2471,7 +2471,7 @@ f
 /* Why we page styles */
 
 .why_we {
-   margin: 20px 0px 20px;
+   margin: 10px 0px 20px;
 }
 .why_we_container {
 }
@@ -2554,6 +2554,10 @@ f
 }
 
 @media (max-width: 800px) {
+   .why_we {
+   margin: 0px 0px 0px;
+}
+   
    .why_we__row {
    flex-wrap: wrap;
    flex-direction: column-reverse;
@@ -2562,14 +2566,14 @@ f
    
    .why_we__column {
    flex: 1 1 100%;
-   padding: 10px 20px 10px 20px;
+   padding: 10px 10px 10px 10px;
    min-height: 100%;
 /*      border: 1px solid grey;*/
       overflow: hidden;
 }
    .why_we__column1 {
    flex: 1 1 100%;
-   padding: 10px 20px 10px 20px;
+   padding: 10px 10px 10px 10px;
       
 }
    
