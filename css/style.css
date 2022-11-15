@@ -757,7 +757,7 @@ f
    background-color: orangered;
    font-size: 16px;
    font-weight: 500;
-   width: 180px;
+   width: 200px;
    visibility: hidden;
    opacity: 0;
    transition: all 0.3s ease 0s;
@@ -776,8 +776,8 @@ f
 
 .sub__navigation-link {
    cursor: pointer;
-   margin-bottom: 7px;
-   padding-bottom: 7px;
+   margin-bottom: 9px;
+   padding-bottom: 9px;
    display: inline-block;
    font-size: 18px;
 /*      padding-bottom: 7px;*/
@@ -785,7 +785,7 @@ f
    font-weight: 500;
    padding-left: 10px;
    width: 100%;
-   font-size: 18px;
+   font-size: 16px;
    color: white;
 }
 
@@ -1064,6 +1064,7 @@ f
     font-weight: 500;
     padding: 3px 7px;
     background-color: orangered;
+   border-radius: 5px 0px 0px 5px;
 }
 
 .home_photo_promo {
@@ -1271,10 +1272,14 @@ f
 
 .site_sections__inner {
    display: flex;
-   gap: 20px;
+/*   gap: 20/px;*/
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
+
 .site_sections__item {
-   flex: 0 1 25%;  
+   flex: 0 1 25%;
+   padding: 10px;
 }
 
 
@@ -1339,6 +1344,56 @@ f
 
 .color_item_orange {
    background-color: rgba(255, 69, 0, 0.75);
+}
+
+
+.color_item_pink {
+   background-color: rgba(163, 0, 212, 0.75);
+}
+
+
+.color_item_olive {
+   background-color: rgba(173, 127, 0, 0.75);
+}
+
+.color_item_green {
+   background-color: rgba(0, 173, 27, 0.75);
+}
+
+.color_item_white {
+   background-color: rgba(229, 159, 0, 0.75);
+}
+
+.color_item_darkkhaki {
+   background-color: rgba(141, 59, 0, 0.75);
+}
+
+.color_item_stateblue {
+   background-color: rgba(0, 62, 162, 0.75);
+}
+
+.color_item_yellow {
+   background-color: rgba(193, 0, 89, 0.71);
+}
+
+.color_item_gold {
+   background-color: rgba(222, 0, 0, 0.75);
+}
+
+.color_item_france {
+   background-color: rgba(0, 38, 84, 0.74);
+}
+
+.color_item_arabia {
+   background-color: rgba(22, 93, 49, 0.71);
+}
+
+.color_item_italy {
+   background-color: rgba(0, 140, 69, 0.69);
+}
+
+.color_item_account {
+   background-color: rgba(0, 79, 108, 0.69);
 }
 
 
@@ -1547,7 +1602,7 @@ f
 .info_title {
    font-weight: 700;
    font-size: 19px;
-   margin-bottom: 10px;
+   margin-bottom: 8px;
    border-left: 4px solid gold;
    padding: 3px 10px;
 }
@@ -1631,13 +1686,23 @@ f
       overflow: hidden;
    color: black;
 }
+
 .about_same-price {
-   font-size: 16px;
+   font-size: 14px;
    font-weight: 500;
    text-align: right;
    margin-bottom: 15px;
-   color: black;
+   color: #0065ef;
+   
 }
+
+.about_same-price span {
+   color: orangered;
+   font-weight: 700;
+/*   border: 1px solid blue;*/
+   font-size: 16px;
+}
+
 
 @media (max-width: 991px) {
    .about_right {
