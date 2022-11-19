@@ -179,7 +179,6 @@ body.lock {
 }
 
 
-
 @media (max-width: 800px) {
    .header__top_social {
       justify-content: flex-end;
@@ -194,6 +193,58 @@ body.lock {
    .social_mobile {
       margin-right: 10px;
    }
+}
+
+/* icon whatsapp fixed */
+
+.whatsapp_link {
+   position: fixed;
+   bottom: 25px;
+   right: 15px;
+   z-index: 99999;
+   font-size: 40px;
+/*   background: #25d366;*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+/*   transition: all 0.3s ease 0s;*/
+   width: 0;
+	height: 0;
+	padding: 25px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+.whatsapp_link1:hover {
+/*   box-shadow: 0px 0px 9px rgba(71, 230, 0, 0.87);*/
+  
+   
+}
+
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.68);
+	}
+	80% {
+		box-shadow: 0 0 0 22px rgba(37, 211, 102, 0);
+	}
+}
+
+
+
+.whatsapp_link img {
+   width: 50px;
+   height: 50px;
+}
+
+.whatsapp_link img:hover {
+   
 }
 
 /* Form */
@@ -327,7 +378,7 @@ f
 .main__banner_text {
    position: absolute;
    z-index: 2;
-   top: 50px;
+   top: 35px;
    left: 7%;
    max-width: 600px;
    padding: 10px 10px;
@@ -1001,7 +1052,8 @@ f
 .homes__ads__main__inner {
     display: flex;
     justify-content: center;
-   margin: 5px -5px 30px;
+   margin: 5px -7px 30px;
+   flex-wrap: wrap;
 }
 
 .home__item {
@@ -1153,9 +1205,9 @@ f
     margin-right: 5px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
    .homes__ads__main__inner {
-      flex-wrap: wrap;
+      
    }
    
    .home__item {
@@ -1274,7 +1326,7 @@ f
    display: flex;
 /*   gap: 20/px;*/
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: center;
 }
 
 .site_sections__item {
@@ -1331,7 +1383,7 @@ f
    top: 0;
    left: 0;
    z-index: 2;
-   background-color: rgba(203, 203, 0, 0.65);
+   background-color: rgba(145, 145, 0, 0.77);
 }
 
 .color_item_red {
@@ -1416,8 +1468,10 @@ f
 
 @media (max-width: 750px) {
    .site_sections__inner {
+/*
    flex-wrap: wrap;
    justify-content: center;
+*/
 }
    
    .site_sections__item {
