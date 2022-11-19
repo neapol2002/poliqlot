@@ -1828,8 +1828,12 @@ f
 }
 
 
+.ex-3 {
+   min-width: 100%;
+}
+
 .accordion {
-    width: 100%;
+    min-width: 100%;
     margin-bottom: 10px;
 }
 .accordion__control {
@@ -1842,6 +1846,7 @@ f
     list-style: none;
     cursor: pointer;
    transition: all 0.5s ease 0s;
+   min-width: 100%;
 }
 
 
@@ -1926,6 +1931,8 @@ f
     transition: all 0.3s ease-out;
     box-sizing: content-box;
 }
+
+
 
 .accordion__title {
     font-weight: bold;
@@ -2244,8 +2251,8 @@ f
     border: 1px solid gold;
     cursor: pointer;
     font-size: 14px;
-    text-align: right;
-/*    text-align: left;*/
+/*    text-align: right;*/
+   text-align: center;
     color: #009500;
    color: white;
     font-weight: 700;
@@ -2798,6 +2805,102 @@ f
    
 }
 
+/* Apply form styles */
+
+.apply_form {
+}
+.apply_form_container {
+}
+._container {
+}
+.apply_form_body {
+   border: 1px dashed grey;
+   border-radius: 5px;
+   padding: 20px;
+   margin: 10px 20px 30px;
+}
+
+.apply_form_main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.apply_item {
+   display: flex;
+   flex-direction: column;
+   flex: 1 0 33.333%;
+   padding: 10px;
+}
+
+.apply_item label {
+   font-size: 14px;
+   font-weight: 600;
+   margin-bottom: 5px;
+}
+
+.form-control {
+   font-size: 16px;
+   padding: 7px 10px;
+   outline: none;
+   border-radius: 5px;
+}
+.form-select {
+   font-size: 16px;
+   padding: 7px 10px;
+   outline: none;
+   border-radius: 5px;
+}
+.apply_form_btn {
+   background-color: olivedrab;
+   color: white;
+   padding: 10px 25px;
+   border-radius: 5px;
+   font-weight: 600;
+   font-size: 16px;
+   margin: 20px 20px 10px;
+   flex: 0 0 250px;
+   text-align: center;
+   transition: all 0.3s ease 0s;
+   cursor: pointer;
+}
+
+.apply_form_btn:hover {
+   color: gold;
+}
+
+
+@media (max-width: 1100px) {
+   .apply_item {
+      flex: 0 0 50%;
+   }
+}
+
+@media (max-width: 730px) {
+   .apply_form_body {
+      margin: 10px;
+      padding: 10px;
+   }
+   
+   .apply_item {
+      flex: 0 0 100%;
+      padding: 10px 5px;
+   }
+}
+
+@media (max-width: 400px) {
+   .apply_item label {
+      font-size: 14px;
+   }
+   
+   .form-control {
+      font-size: 14px;
+   }
+   
+   .form-select {
+      font-size: 14px;
+   }
+}
 
 /*  Footer Styles */
 
@@ -2998,6 +3101,7 @@ f
     background-color: orangered;
 /*   border: 1px solid transparent;*/
     transition: background .2s linear;
+   text-align: center;
 }
 
 .subscribe__btn:hover {
